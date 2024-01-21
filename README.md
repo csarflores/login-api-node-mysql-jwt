@@ -15,40 +15,46 @@ Asegúrate de tener instalados los siguientes requisitos previos antes de ejecut
 
 ```bash
 git clone https://github.com/tu-usuario/tu-repositorio.git
+```
 cd tu-repositorio
-Instala las dependencias:
-bash
-Copy code
+
+## 2. Instala las dependencias:
+
+```bash
 npm install
-Configura la base de datos:
+```
+
+## 3. Configura la base de datos:
 
 Crea una base de datos MySQL.
 Copia el archivo .env.example a .env y configura las variables de entorno, incluyendo la conexión a la base de datos.
-Ejecuta la aplicación:
 
-bash
-Copy code
+## 4. Ejecuta la aplicación:
+
+```bash
 npm start
-La aplicación estará disponible en http://localhost:3000.
+```
+La aplicación estará disponible en http://localhost:4000.
 
-Funcionalidades
+## Funcionalidades
 Registro de usuarios.
 Inicio de sesión con autenticación basada en JWT.
-Estructura del Proyecto
+Estructura del Proyecto.
+
 La estructura del proyecto está organizada de la siguiente manera:
+- src/controllers: Controladores para manejar las solicitudes HTTP.
+- src/database: Configuración y funciones relacionadas con la base de datos.
+- src/middleware: Middleware para autenticación y funciones adicionales.
+- src/routes: Rutas de la aplicación.
 
-src/controllers: Controladores para manejar las solicitudes HTTP.
-src/database: Configuración y funciones relacionadas con la base de datos.
-src/middleware: Middleware para autenticación y funciones adicionales.
-src/routes: Rutas de la aplicación.
+## Tecnologías Utilizadas:
+- Node.js
+- MySQL
+- JSON Web Token (JWT)
+- Express
 
-Tecnologías Utilizadas
-Node.js
-MySQL
-JSON Web Token (JWT)
-Express
-Contribuciones
+## Contribuciones
 ¡Las contribuciones son bienvenidas! Si encuentras algún problema o tienes sugerencias de mejora, por favor, abre un problema o envía una solicitud de extracción.
 
 Licencia
-Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
+Este proyecto está bajo la Licencia MIT.
